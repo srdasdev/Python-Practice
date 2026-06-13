@@ -20,5 +20,5 @@ for data in get_each_word:
 
 
 
-        
-print(dict)  # Output: ["the", "cat", "sat", "the", "cat", "ate", "the", "dog", "ran"]
+print(dict)
+#  // Output: {'the': 3, 'cat': 2, 'sat': 1, 'ate': 1, 'dog': 1, 'ran': 1}
