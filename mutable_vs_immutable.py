@@ -23,6 +23,16 @@ str1 = "Hello"
 print("Original string:", str1)
 str1 = str1 + " World"
 print("Modified string:", str1) #output: Modified string: Hello World
+print(id(str1)) # Output: Memory address of the new string "Hello World"
+print(id("Hello")) # Output: Memory address of the original string "Hello"
 # //But note that the original string "Hello" is not modified; instead, a new string "Hello World" is created and assigned to str1. The original string remains unchanged.
 
 
+# Ints are also immutable:
+num1 = 10
+print("Original number:", num1)
+num1 += 5
+print("Modified number:", num1) #output: Modified number: 15
+print(id(num1)) # Output: Memory address of the new number 15
+print(id(10)) # Output: Memory address of the original number 10
+# //Similar to strings, when we modify num1, a new integer object is created with the value 15, and num1 now references this new object. The original integer 10 remains unchanged.
