@@ -51,3 +51,6 @@ str(t)          # '25°C'                    ← str() uses __str__
 t               # Temperature(celsius=25)   ← REPL uses __repr__
 repr(t)         # 'Temperature(celsius=25)' ← repr() uses __repr__
 print([t])      # [Temperature(celsius=25)] ← containers ALWAYS use __repr__
+
+
+# repr() is meant to be unambiguous and is used for debugging and logging, while str() is meant to be readable and is used for displaying information to end users. If __str__ is not defined, Python will fall back to using __repr__.
