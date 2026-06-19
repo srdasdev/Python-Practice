@@ -32,3 +32,8 @@ car = Car()
 bike = Bike()
 print(car.start())  # Output: Car is starting with a key.
 print(bike.start())  # Output: Bike is starting with a button.
+
+
+# ABC is a special base class from the abc module. Inheriting from it tells Python: "this class is abstract — block direct instantiation if it has unimplemented abstract methods."
+
+# Without ABC, Python has no concept of "abstract" — any class can be instantiated freely, even with empty/pass methods. ABC is what gives the enforcement teeth.
