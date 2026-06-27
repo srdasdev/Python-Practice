@@ -7,6 +7,3 @@ while(True):
         print(item)
     except StopIteration:
         break
-
-
-
